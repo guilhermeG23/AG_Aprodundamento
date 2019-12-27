@@ -1,0 +1,31 @@
+#A.G -> Algoritimo genético
+
+Não é a melhor solução para tudo:
+
+#Vantagens:
+* Pode resolver problema complexos com mais facilidade pois vai funilando resultados
+
+#Desvantagem:
+* Otimização do algotimo tem que estar boa para resultados decentes
+* Necessita bom poder computacional
+* Não é aplicavel em todos os métodos
+
+#Individuo
+Comportamentos->Fenotipo
+Genoma->genotipo
+Cromossomos->Informação do individuo
+
+#Funcionamento simples
+Proposto um ambiente, individuos neste ambiente tem que sobreviver(apresentar melhor resultado), por meio disso,
+ocorrerá o cruzamento dos individuos, onde a chance de um individuo gerar um filho é determinada por sua
+capacidade de sobrevivencia(quanto melhor seu resultado for), onde todos os individuos tem chance de se reporoduzir,
+porém os melhores tem mais chances que os piores.
+
+#Mutação
+Chance aleatoria de ocorrer uma modificação em algum cromosso em qualquer geração
+
+#fitness
+Capacidade do individuo no ambiente proposto
+
+#Heuristica
+Processo que puxa a primeira informação relacionada com determinada coisa(Valor externo que forçou a busca)
