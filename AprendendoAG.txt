@@ -2,6 +2,9 @@
 
 Não é a melhor solução para tudo:
 
+#Máxima local 
+Algoritimo estagnou
+
 #Vantagens:
 * Pode resolver problema complexos com mais facilidade pois vai funilando resultados
 
@@ -20,9 +23,6 @@ Proposto um ambiente, individuos neste ambiente tem que sobreviver(apresentar me
 ocorrerá o cruzamento dos individuos, onde a chance de um individuo gerar um filho é determinada por sua
 capacidade de sobrevivencia(quanto melhor seu resultado for), onde todos os individuos tem chance de se reporoduzir,
 porém os melhores tem mais chances que os piores.
-
-#Mutação
-Chance aleatoria de ocorrer uma modificação em algum cromosso em qualquer geração
 
 #fitness
 Capacidade do individuo no ambiente proposto
@@ -49,5 +49,31 @@ Após a seleção dos individuos com fitness e roleta será feita a reprodução
 sendo que pode selecionar pontos que podem ou não sofrer com o crossover, é totalmente definido pela forma que o code foi estruturado, a atribuição das caracteriticas
 tambem podem ser manipuladas 
 
+#Mais de uma forma de crossover
+Uniforme -> Depende as caracteristicas é alterado determinado gene
+Um Ponto -> Somente um ponto do gene será alterado no novo individuo
+	Corta partes de ambos os pais e recombina estes pedaços para gerar um novo individuo
+Dois pontos -> O mesmo que o de um ponto, porém é dividido em mais pedaços e recombinado
+Aritimético -> novo individuo é a combinação aritimética dos individuos pais
+
+#Problemas do crossover
+Se o crossover acontecer muito fácil se perde estruturas competentes
+Se o crossover for dificil de acontencer, vai demorar muito para ocorrer alterações significativas
+
 #Mutação
-Processo aleatorio da monidifcação de um valor
+Processo aleatorio da monidifcação de um valor que pode acontecer com qualquer individuo a cada nova geração
+
+#Problemas da mutação
+Taxas nulas não geram a diversidade proposta
+Taxas extremamente baixas geram diversidade, porém a um ritmo baixo
+Taxas altas torna o algotimo basicamente aleatorio
+
+#Número de gerações
+Limite do algoritimo, quando é para parar o processo, quando não encontrado a solução até determinado ponto:
+* Limite de gerações
+* Tempo limite de processamento
+
+#Otimo local para otimo global
+
+Local -> Melhor da geração
+Global -> Melhor geral 
