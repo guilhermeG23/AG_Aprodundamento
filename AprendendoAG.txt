@@ -29,3 +29,25 @@ Capacidade do individuo no ambiente proposto
 
 #Heuristica
 Processo que puxa a primeira informação relacionada com determinada coisa(Valor externo que forçou a busca)
+
+#Diferenças do A.G
+É um tipo de algoritimo que não se importa com a entrada, isso é, para resolução de uma questão, ele se importa
+com o objetivo a atingir
+
+#Melhor ativo
+O melhor fitness de uma geração não é necessariamente a melhor solução, somente é a melhor atual, somente utilizar as melhores pode
+levar o algoritimo a ficar estagnado, sendo assim, a forma de solução foi, melhorar as chances do melhor fitness se reproduzir e 
+dificultar a reprodução com os de menor fitness, assim tem um balanceamento e filtro para evitar a progressão daqueles que já estão ruins
+
+#Método de roleta
+Após o fitness, cada valor terá uma partição em uma roleta de 100%, seu espaço na roleta é definido pela sua capacidade no fitness, 
+após isso a seleção é aleatoria dos individuos, aqueles com melhores fitness terão mais chances de se reproduzir, porém não significa necessáriamente
+que vão se reproduzir
+
+#Crossover
+Após a seleção dos individuos com fitness e roleta será feita a reprodução da nova geração, um novo individuo é formado por caracteristicas de ambos os pais,
+sendo que pode selecionar pontos que podem ou não sofrer com o crossover, é totalmente definido pela forma que o code foi estruturado, a atribuição das caracteriticas
+tambem podem ser manipuladas 
+
+#Mutação
+Processo aleatorio da monidifcação de um valor
